@@ -6,7 +6,21 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Refactoring Life`,
+    // Default title of the page
+    siteTitleAlt: `Refactoring Life - A blog about softwware, psychology and life`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Refactoring Life`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://refactoringlife.com`,
+    // Used for SEO
+    siteDescription: `A minimal blog about software, psychology and life.`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@kumar_abhijeet3`,
   },
   plugins: [
     {
@@ -26,11 +40,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/kumar_abhijeet3`,
           },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/kumar__abhijeet/`,
           },
         ],
       },
